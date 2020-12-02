@@ -1,15 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+    <title>Home</title>
+    <!-- Styles -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="styles/libs.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+  </head>
 
-</body>
+  <body>
+    <section class="recomendation">
+      <form class="recomendation__search" action="GET">
+        <svg class="icon">
+          <use xlink:href="images/sprite.svg#search">
+        </svg>
+        <input type="text" placeholder="What you looking for?">
+      </form>
+      <div class="recomendation__slider js-recomendation-swiper-container">
+        <div class="recomendation__wrapper swiper-wrapper">
+          <div class="recomendation__slide swiper-slide" style="background-image: url(images/products/1.png)">
+            <div class="recomendation__slide-text">
+              <p class="recomendation__slide-type">Recommendations</p>
+              <p class="recomendation__slide-title">Woman Blue Denim</p>
+              <div class="recomendation__slide-price">
+                <p class="recomendation__slide-price-now">$30.30</p>
+                <p class="recomendation__slide-price-old">$36.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="recomendation__slide swiper-slide" style="background-image: url(images/products/3.png)">
+            <div class="recomendation__slide-text">
+              <p class="recomendation__slide-type">Recommendations</p>
+              <p class="recomendation__slide-title">Man Jacket</p>
+              <div class="recomendation__slide-price">
+                <p class="recomendation__slide-price-now">$50.50</p>
+                <p class="recomendation__slide-price-old">$85.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="recomendation__slide swiper-slide" style="background-image: url(images/products/2.png)">
+            <div class="recomendation__slide-text">
+              <p class="recomendation__slide-type">Recommendations</p>
+              <p class="recomendation__slide-title">Man T-shirt</p>
+              <div class="recomendation__slide-price">
+                <p class="recomendation__slide-price-now">$20.00</p>
+                <p class="recomendation__slide-price-old">$33.50</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="recomendation__pagination js-recomendation-swiper-pagination"></div>
+    </section>
+    <!-- Scripts -->
+    <script type="text/javascript" src="scripts/libs.min.js" deffer></script>
+    <script type="text/javascript" src="scripts/main.js" deffer></script>
+  </body>
 </html>
-
-<div>
-
-</div>

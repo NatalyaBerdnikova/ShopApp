@@ -104,3 +104,127 @@ img {
     border-radius: unset;
   }
 }
+
+.recomendation {
+  position: relative;
+  height: 50vh;
+  margin-bottom: 30px;
+}
+
+.recomendation__search {
+  position: absolute;
+  top: 50px;
+  left: 25px;
+  right: 25px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.23);
+  border-radius: 5px;
+  padding: 12px;
+  z-index: 3;
+}
+
+.recomendation__search input {
+  width: 85%;
+  margin-left: 15px;
+  background: rgba(255, 255, 255, 0);
+  color: white;
+  font-family: "NunitoSans", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.recomendation__search input::placeholder {
+  color: white;
+  font-size: 16px;
+}
+
+.recomendation__slider {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 50px 50px;
+  overflow: hidden;
+}
+
+.recomendation__wrapper {
+  height: 100%;
+}
+
+.recomendation__slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-shadow: inset 0px -150px 100px -50px rgba(0, 0, 0, 0.5);
+}
+
+.recomendation__slide-text {
+  padding: 20px;
+}
+
+.recomendation__slide-type {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.recomendation__slide-title {
+  font-size: 33px;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.recomendation__slide-price {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+}
+
+.recomendation__slide-price-now {
+  font-weight: 800;
+  color: #56bffc;
+}
+
+.recomendation__slide-price-old {
+  font-size: 0.6em;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: line-through;
+  margin-left: 10px;
+}
+
+.recomendation__pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.recomendation__pagination .swiper-pagination-bullet {
+  height: 7px;
+  width: 7px;
+  background-color: #98cdf7;
+  opacity: 1;
+  transition: transform 200ms;
+}
+
+.recomendation__pagination .swiper-pagination-bullet-active {
+  transform: scale(1.5);
+  background-color: #3ba2f2;
+}
+
+.recomendation__pagination .swiper-pagination-bullet + .swiper-pagination-bullet {
+  margin-left: 12px;
+}
+
+.icon {
+  display: inline-block;
+  max-height: 20px;
+  max-width: 20px;
+  fill: white;
+}
