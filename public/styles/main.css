@@ -50,9 +50,57 @@ body {
   font-size: 16px;
   font-family: "NunitoSans", sans-serif;
   line-height: 1;
+  min-height: 100vh;
 }
 
 img {
   max-height: 100%;
   max-width: 100%;
+}
+
+.general {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right bottom, #e9eef8, #c6cddc);
+}
+
+.general__container {
+  position: relative;
+  width: 410px;
+  height: 870px;
+  max-height: 80vh;
+  border-radius: 50px;
+  background-color: white;
+  box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.general__container iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.general__container::before {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 15px;
+  left: 20px;
+  right: 20px;
+  height: 10px;
+  background-image: url(../images/status-bar.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 767px) {
+  .general__container {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    border-radius: unset;
+  }
 }
