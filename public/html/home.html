@@ -54,6 +54,48 @@
       </div>
       <div class="recomendation__pagination js-recomendation-swiper-pagination"></div>
     </section>
+    <section class="section trending">
+      <div class="section__header">
+        <p class="section__title">Trending</p>
+        <a href="#" class="section__show">Show All</a>
+      </div>
+      <div class="trending__slider swiper-container js-trending-swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide trending__slide">
+            @@include('product-card-small.html', {
+              "image": "images/products/2.png",
+              "title": "Russ Shirt",
+              "price-now": "$19.99",
+              "price-old": "$25.99"
+              })
+          </div>
+          <div class="swiper-slide trending__slide">
+            @@include('product-card-small.html', {
+              "image": "images/products/3.png",
+              "title": "Comfort Jacket",
+              "price-now": "$50.90",
+              "price-old": "$60.90"
+              })
+          </div>
+          <div class="swiper-slide trending__slide">
+            @@include('product-card-small.html', {
+              "image": "images/products/4.png",
+              "title": "Eywa Hoodie",
+              "price-now": "$30.99",
+              "price-old": "$44.99"
+              })
+          </div>
+          <div class="swiper-slide trending__slide">
+            @@include('product-card-small.html', {
+              "image": "images/products/5.png",
+              "title": "Woman Shirt",
+              "price-now": "$19.99",
+              "price-old": "$25.99"
+              })
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Scripts -->
     <script type="text/javascript" src="scripts/libs.min.js" deffer></script>
     <script type="text/javascript" src="scripts/main.js" deffer></script>
