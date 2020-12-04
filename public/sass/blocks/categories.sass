@@ -1,0 +1,39 @@
+.categories
+  $this: &
+  margin-bottom: 40px
+
+  &__link
+    display: flex
+    align-items: center
+    padding: 10px 30px
+    border-radius: 10px
+    background-color: white
+    margin: 0 20px 10px 20px
+    box-shadow: 5px 10px 20px -5px rgba(131, 133, 136, 0.1)
+
+    &:hover
+      #{$this}__arrow
+        transform: translateX(5px)
+
+  &__logo
+    .icon
+      max-height: 30px
+      max-width: 30px
+
+  &__title
+    font-size: 17px
+    font-weight: 600
+    margin-left: 15px
+
+  &__count
+    font-size: 13px
+    color: #b8b8b8
+    margin-left: 10px
+
+  &__arrow
+    margin-left: auto
+    transition: transform 100ms
+
+    .icon
+      max-height: 15px
+      max-width: 15px
