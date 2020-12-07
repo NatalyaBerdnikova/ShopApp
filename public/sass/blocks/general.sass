@@ -1,4 +1,5 @@
 .general
+  position: relative
   height: 100vh
   display: flex
   justify-content: center
@@ -37,3 +38,20 @@
       height: 100%
       max-height: 100%
       border-radius: unset
+
+  &__author
+    position: absolute
+    top: 40px
+    left: 0
+    right: 0
+    text-align: center
+
+    &-link
+      transition: color 100ms
+      text-decoration: underline
+
+      &:hover
+        color: $c-primary
+
+    @media (max-width: 767px)
+      display: none
