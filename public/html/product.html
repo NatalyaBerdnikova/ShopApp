@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+  <title>Product</title>
+  <!-- Styles -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="styles/libs.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+
+<body>
+  <section class="product">
+    <div class="product__image">
+      <div class="product__header">
+        <a href="home.html" class="product__back-arrow">
+          <svg class="icon">
+            <use xlink:href="images/sprite.svg#arrow-back">
+          </svg>
+        </a>
+        <div class="product__cart">
+          <p class="product__cart-counter">0</p>
+          <a href="#">
+            <svg class="icon">
+              <use xlink:href="images/sprite.svg#cart">
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="product__slider js-product-swiper-container">
+        <div class="product__wrapper swiper-wrapper">
+          <div class="product__slide swiper-slide" style="background-image: url(images/products/4.png)"></div>
+          <div class="product__slide swiper-slide" style="background-image: url(images/products/3.png)"></div>
+          <div class="product__slide swiper-slide" style="background-image: url(images/products/2.png)"></div>
+        </div>
+      </div>
+      <div class="product__pagination js-product-swiper-pagination"></div>
+    </div>
+    <div class="product__info">
+      <p class="product__title">
+        Eywa Hoodie
+      </p>
+      <div class="product__price">
+        <p class="product__price-now">$30.99</p>
+        <p class="product__price-old">$44.99</p>
+      </div>
+    </div>
+    <div class="product__color">
+      <p>Color</p>
+      <div class="product__color-radio-container">
+        <div class="product__color-radio">
+          <input type="radio" name="color" id="colorWhite">
+          <label for="colorWhite" style="background-color: white;"></label>
+        </div>
+        <div class="product__color-radio">
+          <input type="radio" name="color" id="colorGray">
+          <label for="colorGray" style="background-color: #d6dce7;"></label>
+        </div>
+        <div class="product__color-radio">
+          <input type="radio" name="color" id="colorBlack">
+          <label for="colorBlack" style="background-color: #323232;"></label>
+        </div>
+        <div class="product__color-radio">
+          <input type="radio" name="color" id="colorBlue">
+          <label for="colorBlue" style="background-color: #157bca;"></label>
+        </div>
+      </div>
+    </div>
+    <div class="product__size">
+      <p>Size</p>
+      <div class="product__size-radio-container">
+          <div class="product__size-radio">
+            <input type="radio" name="size" id="sizeS">
+            <label for="sizeS"><span>S</span></label>
+          </div>
+          <div class="product__size-radio">
+            <input type="radio" name="size" id="sizeM">
+            <label for="sizeM"><span>M</span></label>
+          </div>
+          <div class="product__size-radio">
+            <input type="radio" name="size" id="sizeL">
+            <label for="sizeL"><span>L</span></label>
+          </div>
+          <div class="product__size-radio">
+            <input type="radio" name="size" id="sizeXL">
+            <label for="sizeXL"><span>XL</span></label>
+          </div>
+          <div class="product__size-radio">
+            <input type="radio" name="size" id="sizeXXL">
+            <label for="sizeXXL"><span>XXL</span></label>
+          </div>
+      </div>
+    </div>
+    <a href="#" class="product__button-add-to-cart">
+      <p>Add to cart</p>
+    </a>
+  </section>
+  <!-- Scripts -->
+  <script type="text/javascript" src="scripts/libs.min.js" deffer></script>
+  <script type="text/javascript" src="scripts/main.js" deffer></script>
+</body>
+
+</html>

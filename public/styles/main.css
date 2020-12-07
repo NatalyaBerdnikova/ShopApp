@@ -175,6 +175,7 @@ img {
 }
 
 .recomendation__slide-title {
+  display: block;
   font-size: 33px;
   font-weight: 800;
   color: white;
@@ -284,6 +285,224 @@ img {
   max-width: 15px;
 }
 
+.product {
+  position: relative;
+}
+
+.product__image {
+  position: relative;
+  height: 60vh;
+  max-height: 500px;
+}
+
+.product__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 50px;
+  right: 25px;
+  left: 25px;
+  z-index: 5;
+}
+
+.product__cart {
+  position: relative;
+}
+
+.product__cart .icon {
+  max-height: 25px;
+  max-width: 25px;
+}
+
+.product__cart-counter {
+  position: absolute;
+  top: -7px;
+  right: -10px;
+  border-radius: 50px;
+  font-size: 12px;
+  color: white;
+  padding: 5px 8px;
+  background-color: #3fa6f6;
+}
+
+.product__slider {
+  border-radius: 0 0 50px 50px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.product__slide {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.product__pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  right: 0;
+  z-index: 5;
+}
+
+.product__pagination .swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.8);
+  opacity: 1;
+  transition: transform 200ms;
+}
+
+.product__pagination .swiper-pagination-bullet-active {
+  transform: scale(1.5);
+  background-color: white;
+}
+
+.product__pagination .swiper-pagination-bullet + .swiper-pagination-bullet {
+  margin-left: 12px;
+}
+
+.product__info {
+  padding: 15px 20px;
+}
+
+.product__title {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.product__price {
+  font-size: 25px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.product__price-old {
+  font-size: 16px;
+  color: #c2c5c9;
+  text-decoration: line-through;
+  margin-left: 15px;
+}
+
+.product__color {
+  padding: 15px 20px;
+}
+
+.product__color-radio + .product__color-radio {
+  margin-left: 32px;
+}
+
+.product__color-radio-container {
+  display: flex;
+  margin-top: 15px;
+}
+
+.product__color-radio label {
+  position: relative;
+  display: block;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  -webkit-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-color: white;
+  border-radius: 50px;
+}
+
+.product__color-radio label::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  display: block;
+  width: 26px;
+  height: 26px;
+  border-radius: 50px;
+  background-color: transparent;
+  border: 2px solid transparent;
+  transition: border-color 100ms;
+}
+
+.product__color-radio input {
+  display: none;
+}
+
+.product__color-radio input:checked + label::before {
+  border-color: #319bee;
+}
+
+.product__size {
+  padding: 15px 20px;
+}
+
+.product__size-radio-container {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 5px;
+  background-color: #e4ebf5;
+  color: #bec9da;
+  margin: 15px 0 20px;
+  padding: 5px 15px;
+  z-index: -3;
+}
+
+.product__size-radio label {
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding: 0 15px;
+  transition: color 100ms;
+}
+
+.product__size-radio label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  height: 20px;
+  width: 20px;
+  margin: auto;
+  border-radius: 5px;
+  background: unset;
+  box-shadow: unset;
+  transition: transform 100ms;
+}
+
+.product__size-radio input:checked + label {
+  z-index: 2;
+  color: white;
+}
+
+.product__size-radio input:checked + label::before {
+  background: linear-gradient(to right bottom, #389fee, #096ebb);
+  transform: scale(2);
+  box-shadow: 0 5px 15px rgba(15, 116, 194, 0.35);
+  z-index: -1;
+}
+
+.product__button-add-to-cart {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  margin: 0 25px 25px;
+  border-radius: 10px;
+  background: linear-gradient(to right, #389fee, #096ebb);
+  color: white;
+  font-weight: 800;
+  font-size: 18px;
+  box-shadow: 0 10px 20px -5px rgba(15, 116, 194, 0.35);
+}
+
 .icon {
   display: inline-block;
   max-height: 20px;
@@ -312,6 +531,8 @@ img {
 }
 
 .product-card-small {
+  display: block;
+  position: relative;
   width: 145px;
   background-color: white;
   box-shadow: 5px 10px 20px -5px rgba(131, 133, 136, 0.24);

@@ -1,0 +1,185 @@
+.product
+  position: relative
+
+  &__image
+    position: relative
+    height: 60vh
+    max-height: 500px
+
+  &__header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    position: absolute
+    top: 50px
+    right: 25px
+    left: 25px
+    z-index: 5
+
+  &__cart
+    position: relative
+
+    .icon
+      max-height: 25px
+      max-width: 25px
+
+    &-counter
+      position: absolute
+      top: -7px
+      right: -10px
+      border-radius: 50px
+      font-size: 12px
+      color: white
+      padding: 5px 8px
+      background-color: #3fa6f6
+
+  &__slider
+    border-radius: 0 0 50px 50px
+    overflow: hidden
+    height: 100%
+
+  &__slide
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: cover
+
+  &__pagination
+    display: flex
+    justify-content: center
+    align-items: center
+    position: absolute
+    bottom: 25px
+    left: 0
+    right: 0
+    z-index: 5
+
+    .swiper-pagination-bullet
+      background-color: rgba(255, 255, 255, 0.8)
+      opacity: 1
+      transition: transform 200ms
+
+      &-active
+        transform: scale(1.5)
+        background-color: rgba(255, 255, 255, 1)
+
+    .swiper-pagination-bullet + .swiper-pagination-bullet
+      margin-left: 12px
+
+  &__info
+    padding: 15px 20px
+
+  &__title
+    font-size: 36px
+    font-weight: 800
+    margin-bottom: 15px
+
+  &__price
+    font-size: 25px
+    font-weight: 600
+    display: flex
+    align-items: center
+
+    &-old
+      font-size: 16px
+      color: #c2c5c9
+      text-decoration: line-through
+      margin-left: 15px
+
+  &__color
+    padding: 15px 20px
+
+    &-radio
+      & + &
+        margin-left: 32px
+
+      &-container
+        display: flex
+        margin-top: 15px
+
+      label
+        position: relative
+        display: block
+        width: 22px
+        height: 22px
+        cursor: pointer
+        user-select: none
+        background-color: white
+        border-radius: 50px
+
+        &::before
+          content: ""
+          position: absolute
+          top: -4px
+          left: -4px
+          display: block
+          width: 26px
+          height: 26px
+          border-radius: 50px
+          background-color: transparent
+          border: 2px solid transparent
+          transition: border-color 100ms
+
+      input
+        display: none
+
+        &:checked + label::before
+          border-color: $c-primary
+
+  &__size
+    padding: 15px 20px
+
+    &-radio
+      &-container
+        display: flex
+        justify-content: space-around
+        border-radius: 5px
+        background-color: #e4ebf5
+        color: #bec9da
+        margin: 15px 0 20px
+        padding: 5px 15px
+        z-index: -3
+
+      label
+        position: relative
+        cursor: pointer
+        user-select: none
+        padding: 0 15px
+        transition: color 100ms
+
+        &::before
+          content: ""
+          position: absolute
+          top: 0
+          left: 0
+          right: 0
+          bottom: 0
+          display: block
+          height: 20px
+          width: 20px
+          margin: auto
+          border-radius: 5px
+          background: unset
+          box-shadow: unset
+          transition: transform 100ms
+
+      input:checked + label
+        z-index: 2
+        color: white
+
+      input:checked + label::before
+        background: $g-blue-button
+        transform: scale(2)
+        box-shadow: 0 5px 15px rgba(15, 116, 194, 0.35)
+        z-index: -1
+
+  &__button-add-to-cart
+    display: flex
+    justify-content: center
+    padding: 15px
+    margin: 0 25px 25px
+    border-radius: 10px
+    background: $g-primary
+    color: white
+    font-weight: 800
+    font-size: 18px
+    box-shadow: 0 10px 20px -5px rgba(15, 116, 194, 0.35)

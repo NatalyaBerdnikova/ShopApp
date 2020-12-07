@@ -13,3 +13,12 @@ let trendingSlider = new Swiper('.js-trending-swiper-container', {
   freeMode: true,
   grabCursor: true,
 });
+
+let productSlider = new Swiper('.js-product-swiper-container', {
+  loop: true,
+  grabCursor: true,
+  pagination: {
+    el: '.js-product-swiper-pagination',
+    clickable: true,
+  },
+});
