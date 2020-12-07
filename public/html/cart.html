@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+  <title>My Cart</title>
+  <!-- Styles -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="styles/libs.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+
+<body>
+  <section class="cart">
+    <div class="cart__header">
+      <a href="product.html" class="cart__back-arrow">
+        <svg class="icon">
+          <use xlink:href="images/sprite.svg#arrow-back">
+        </svg>
+      </a>
+      <p class="cart__title">My cart</p>
+    </div>
+    <div class="cart__container">
+      @@include('product-card-cart.html', {
+      "image": "images/products/5.png",
+      "title": "Peace Skull Shirt",
+      "color": "Black",
+      "size": "L",
+      "price": "20.90",
+      "count": "2"
+      })
+      @@include('product-card-cart.html', {
+      "image": "images/products/6.png",
+      "title": "Myrtle Beach Sweater",
+      "color": "Blue",
+      "size": "L",
+      "price": "32.00",
+      "count": "1"
+      })
+      @@include('product-card-cart.html', {
+      "image": "images/products/7.png",
+      "title": "Kings Shirt",
+      "color": "Black",
+      "size": "M",
+      "price": "22.90",
+      "count": "1"
+      })
+      @@include('product-card-cart.html', {
+      "image": "images/products/4.png",
+      "title": "Eywa Hoodie",
+      "color": "Gray",
+      "size": "L",
+      "price": "30.90",
+      "count": "1"
+      })
+    </div>
+    <div class="cart__footer">
+      <div class="cart__footer-info">
+        <p>Total</p>
+        <p class="cart__footer-price js-cartTotal">0</p>
+      </div>
+      <a href="#" class="button">
+        <p>Check out</p>
+      </a>
+    </div>
+  </section>
+  <!-- Scripts -->
+  <script type="text/javascript" src="scripts/libs.min.js" deffer></script>
+  <script type="text/javascript" src="scripts/main.js" deffer></script>
+</body>
+
+</html>

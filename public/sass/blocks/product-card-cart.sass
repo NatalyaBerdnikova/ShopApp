@@ -1,0 +1,57 @@
+.product-card-cart
+  display: flex
+  flex-shrink: 0
+  width: 100%
+  padding:  0 20px
+  background-color: #f5f8fd
+  border-radius: 10px
+  z-index: 1
+
+  & + &
+    margin-top: 30px
+
+  &__image
+    height: 110px
+    width: 110px
+    border-radius: 5px
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
+
+  &__info
+    margin-left: 20px
+    flex-grow: 1
+    padding: 12px 0 0
+
+  &__title
+    font-weight: 600
+    font-size: 18px
+    margin-bottom: 10px
+
+  &__selected
+    display: flex
+    color: #87898b
+    margin-bottom: 20px
+
+  &__footer
+    display: flex
+    align-items: center
+
+  &__price
+    font-weight: 800
+    font-size: 17px
+
+  &__counter
+    display: flex
+    margin-left: auto
+
+    &-count
+      padding: 2px 12px
+      background-color: #e4ebf5
+      border-radius: 2px
+
+    &-dec, &-inc
+      display: block
+      padding: 0 2px
+      user-select: none
+      cursor: pointer
